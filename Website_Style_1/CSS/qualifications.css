@@ -1,0 +1,124 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom left, rgb(25, 21, 25), rgb(0, 0, 20));
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: rgb(20, 20, 30);
+  min-height: 70px;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+footer a {
+  padding: 20px 50px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 2vh;
+  transition: ease-in-out 0.07s;
+}
+
+footer a:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+footer a:active {
+  transform: translateY(-2px) scale(0.95);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+  height: 65px;
+}
+
+nav ul li {
+  display: block;
+  flex: 1;
+  padding: 0 1px 0 1px;
+  white-space: nowrap;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: rgb(3, 85, 147);
+  text-align: center;
+  border-radius: 2px;
+}
+
+li a:hover {
+  background: rgb(75, 204, 213);
+}
+
+nav {
+  background: rgb(20, 20, 30);
+  height: 65px;
+  align-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.content-description-wrapper h1 {
+  font-size: 5vh;
+}
+
+.content-description-wrapper p {
+  font-size: 2vh;
+}
+
+.content-resume {
+  height: 70vh;
+  width: 50vh;
+  text-align: center;
+}
+
+.content-resume iframe {
+  height: 80%;
+  width: 100%;
+}

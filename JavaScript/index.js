@@ -21,7 +21,7 @@ rightDeco.style.display = "block";
 rightDeco.style.height = "100px";
 rightDeco.style.width = "200px";
 
-document.getElementById("favicon").href = "../Assets/favicon.png";
+document.getElementById("favicon").href = "Assets/favicon.png";
 
 document.getElementById("content").style.position = "relative"
 document.getElementById("content").appendChild(leftDeco);

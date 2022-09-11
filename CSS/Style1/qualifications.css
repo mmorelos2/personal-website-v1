@@ -8,7 +8,6 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   background: linear-gradient(to bottom left, rgb(25, 21, 25), rgb(0, 0, 20));
   font-family: Helvetica, sans-serif;
@@ -28,7 +27,9 @@ footer {
   text-decoration: none;
 }
 
-footer a {
+.footer-icon {
+  display: flex;
+  align-items: center;
   padding: 20px 50px;
   text-decoration: none;
   color: inherit;
@@ -36,11 +37,17 @@ footer a {
   transition: ease-in-out 0.07s;
 }
 
-footer a:hover {
+.footer-icon img {
+  height: 2vh;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.footer-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
-footer a:active {
+.footer-icon:active {
   transform: translateY(-2px) scale(0.95);
 }
 
@@ -86,34 +93,67 @@ nav {
   align-content: center;
 }
 
-.main {
+.navbar-item a p {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
   flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex-wrap: wrap;
 }
 
-.main-content {
-  margin-right: 50px;
-  width: 
-}
-
-.main-content h1 {
-  font-size: 4.5vh;
-}
-
-.main-content p {
-  font-size: 2.25vh;
+#content-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50vw;
 }
 
-.main-img {
-  height: 75vh;
-  margin-bottom: 20px;
+.content-description-wrapper h1 {
+  font-size: 5vh;
 }
 
-#nav-current {
+.content-description-wrapper p {
+  font-size: 2.1vh;
+  text-align: justify;
+}
+
+#content-resume {
+  height: 70vh;
+  width: 50vh;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#content-resume img {
+  height: 60vh;
+}
+
+#navbar-item-4 a {
   background: rgb(75, 204, 213);
 }
+
+#theme-button {
+  position: fixed;
+  bottom: 3px;
+  left: 3px;
+}
+
+  #theme-button button {
+    border-color: rgb(24, 102, 209);
+    transition-duration: 0.4s;
+    padding: 5px;
+  }
+
+    #theme-button button:hover {
+      background: rgb(24, 102, 209);
+      color: white;
+    }

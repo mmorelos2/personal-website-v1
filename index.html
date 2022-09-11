@@ -1,26 +1,31 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mario Morelos | Home Page</title>
-  <link rel="stylesheet" href="CSS/index.css" />
-  <script src="JavaScript/index.js" defer></script>
+  <link id="stylesheet" rel="stylesheet" href="CSS/Style2/index.css" />
+  <script src="JavaScript/themechange.js" defer></script>
   <link rel="icon" id="favicon"/>
 </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="navbar-item" id="navbar-item-1"><a href="index.html">Home</a></li>
-        <li class="navbar-item" id="navbar-item-2"><a href="about_me.html">About Me</a></li>
-        <li class="navbar-item" id="navbar-item-3"><a href="technical_portfolio.html">Projects</a></li>
-        <li class="navbar-item" id="navbar-item-4"><a href="qualifications.html">Qualifications</a></li>
-        <li class="navbar-item" id="navbar-item-5"><a href="service.html">Service</a></li>
-      </ul>
-    </nav>
-    <div id="content">
-      <h1 id="content-header">Mario Morelos</h1>
-      <p id="content-paragraph">An aspiring Software Engineer</p>
-    </div>
-  </body>
+<body>
+  <nav>
+    <ul>
+      <li class="navbar-item" id="navbar-item-1"><a href="index.html"><p>Home</p></a></li>
+      <li class="navbar-item" id="navbar-item-2"><a href="about_me.html"><p>About Me</p></a></li>
+      <li class="navbar-item" id="navbar-item-3"><a href="technical_portfolio.html"><p>Projects</p></a></li>
+      <li class="navbar-item" id="navbar-item-4"><a href="qualifications.html"><p>Qualifications</p></a></li>
+      <li class="navbar-item" id="navbar-item-5"><a href="service.html"><p>Service</p></a></li>
+    </ul>
+  </nav>
+  <div id="content">
+    <h1 id="content-header">Mario Morelos</h1>
+    <p id="content-paragraph">An aspiring Software Engineer</p>
+    <div id="deco1"></div>
+    <div id="deco2"></div>
+  </div>
+  <div id="theme-button">
+    <button onclick='setTheme("Style1")'>Style 1</button>
+    <button onclick='setTheme("Style2")'>Style 2</button>
+  </div>
+</body>
 </html>

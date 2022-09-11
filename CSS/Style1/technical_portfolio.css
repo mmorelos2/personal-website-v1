@@ -27,7 +27,9 @@ footer {
   text-decoration: none;
 }
 
-footer a {
+.footer-icon {
+  display: flex;
+  align-items: center;
   padding: 20px 50px;
   text-decoration: none;
   color: inherit;
@@ -35,11 +37,17 @@ footer a {
   transition: ease-in-out 0.07s;
 }
 
-footer a:hover {
+.footer-icon img {
+  height: 2vh;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.footer-icon:hover {
   transform: translateY(-2px) scale(1.05);
 }
 
-footer a:active {
+.footer-icon:active {
   transform: translateY(-2px) scale(0.95);
 }
 
@@ -83,6 +91,11 @@ nav {
   background: rgb(20, 20, 30);
   height: 65px;
   align-content: center;
+}
+
+.navbar-item a p {
+  margin: 0;
+  padding: 0;
 }
 
 #projects {
@@ -154,6 +167,11 @@ nav {
   margin-right: 10px;
 }
 
+.project-bottom-wrapper-github img {
+  height: 4vh;
+  margin-top: 3px;
+}
+
 .project-bottom-wrapper-title {
   font-size: 1.5vh;
 }
@@ -182,3 +200,24 @@ nav {
 .project-tile-link:hover + .project-tile-img-hidden {
   display: initial;
 }
+
+#navbar-item-3 a {
+  background: rgb(75, 204, 213);
+}
+
+#theme-button {
+  position: fixed;
+  bottom: 3px;
+  left: 3px;
+}
+
+  #theme-button button {
+    border-color: rgb(24, 102, 209);
+    transition-duration: 0.4s;
+    padding: 5px;
+  }
+
+    #theme-button button:hover {
+      background: rgb(24, 102, 209);
+      color: white;
+    }

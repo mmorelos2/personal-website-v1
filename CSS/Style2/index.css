@@ -1,0 +1,117 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(219, 255, 219), rgb(231, 255, 231));
+  font-family: Helvetica, sans-serif;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+  height: 65px;
+}
+
+.navbar-item {
+  display: block;
+  flex: 1;
+  padding: 0 1px 0 1px;
+  white-space: nowrap;
+}
+
+.navbar-item a {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+  color: black;
+}
+
+nav {
+  height: 65px;
+  align-content: center;
+  background: rgb(133, 255, 133);
+  justify-content: center;
+}
+
+#navbar-item-1 a p {
+  border-color: rgb(164, 62, 255);
+}
+
+.navbar-item a p {
+  margin: 0px 4.5vw;
+  padding: 0;
+  border-bottom: ridge;
+  border-color: rgb(182, 247, 255);
+  border-width: 5px;
+}
+
+.navbar-item a:hover p {
+  border-color: rgb(164, 62, 255);
+}
+
+#content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 100vh;
+}
+
+#content-header {
+  font-size: 8vh;
+}
+
+#content-paragraph {
+  font-size: 3vh;
+  font-style: italic;
+}
+
+#deco1 {
+  border-bottom: 8px solid rgb(164, 62, 255);
+  height: 1px;
+  width: 40vw;
+  margin-bottom: 10px;
+}
+
+#deco2 {
+  border-bottom: 6px solid rgb(139, 242, 255);
+  width: 35vw;
+  height: 1px;
+}
+
+#theme-button {
+  position: fixed;
+  bottom: 3px;
+  left: 3px;
+}
+
+  #theme-button button {
+    border-color: rgb(59, 181, 77);
+    transition-duration: 0.4s;
+    padding: 5px;
+  }
+
+    #theme-button button:hover {
+      background: rgb(59, 181, 77);
+      color: white;
+    }

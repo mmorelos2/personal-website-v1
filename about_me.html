@@ -1,51 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mario Morelos | About Me</title>
-  <link rel="stylesheet" href="CSS/about_me.css" />
-  <script src="JavaScript/about_me.js" defer></script>
+  <link id="stylesheet" rel="stylesheet" href="CSS/Style2/about_me.css" />
+  <script src="JavaScript/themechange.js" defer></script>
   <link rel="icon" id="favicon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  <body>
-    <nav>
-      <ul>
-        <li class="navbar-item" id="navbar-item-1"><a href="index.html">Home</a></li>
-        <li class="navbar-item" id="navbar-item-2"><a href="about_me.html">About Me</a></li>
-        <li class="navbar-item" id="navbar-item-3"><a href="technical_portfolio.html">Projects</a></li>
-        <li class="navbar-item" id="navbar-item-4"><a href="qualifications.html">Qualifications</a></li>
-        <li class="navbar-item" id="navbar-item-5"><a href="service.html">Service</a></li>
-      </ul>
-    </nav>
-    <div class="main">
-      <div class="main-content">
-        <h1>Hey, I'm Mario</h1>
-        <p>
-          I am a third year Computer Science student at Texas A&M University in
-          College Station, TX, and I am currently looking for a Software Engineering internship for the summer of 2023.
-          I fell in love with computer science in my senior year of high school when I took my first programming course,
-          and ever since then I have been expanding the set of tools/frameworks that I use to make develop software. I have
-          created many websites, and I am comfortable using C++ and Python. When I am not programming, you will usually find
-          me playing my guitar or enjoying some rock climbing.
-        </p>
-      </div>
-      <img class="main-img" src="Assets/Mario-Suit.jpg" alt="Picture of Mario Morelos" />
+<body>
+  <nav>
+    <ul>
+      <li class="navbar-item" id="navbar-item-1"><a href="index.html"><p>Home</p></a></li>
+      <li class="navbar-item" id="navbar-item-2"><a href="about_me.html"><p>About Me</p></a></li>
+      <li class="navbar-item" id="navbar-item-3"><a href="technical_portfolio.html"><p>Projects</p></a></li>
+      <li class="navbar-item" id="navbar-item-4"><a href="qualifications.html"><p>Qualifications</p></a></li>
+      <li class="navbar-item" id="navbar-item-5"><a href="service.html"><p>Service</p></a></li>
+    </ul>
+  </nav>
+  <div id="main">
+    <div id="main-content">
+      <h1>Hey, I'm Mario</h1>
+      <p>
+        I am a third year Computer Science student at Texas A&M University in
+        College Station, TX, and I am currently looking for a Software Engineering internship for the summer of 2023.
+        I fell in love with computer science in my senior year of high school when I took my first programming course,
+        and ever since then I have been expanding the set of tools/frameworks that I use to make develop software. I have
+        created many websites, and I am comfortable using C++ and Python. When I am not programming, you will usually find
+        me playing my guitar or enjoying some rock climbing.
+      </p>
     </div>
-    <footer class="footer">
-      <a class="footer-icon" id="github" href="https://github.com/mmorelos2" target="_blank">
-        <i class="fa fa-github"></i>
-        GitHub
-      </a>
-      <a class="footer-icon" id="email" href="mailto:morelos.marioluis@gmail.com">
-        <i class="fa fa-at"></i>
-        Email
-      </a>
-      <a class="footer-icon" id="linkedin" href="https://www.linkedin.com/in/MarioMorelos" target="_blank">
-        <i class="fa fa-linkedin-square"></i>
-        LinkedIn
-      </a>
-    </footer>
-  </body>
+    <img id="main-img" src="Assets/Mario-Suit.jpg" alt="Picture of Mario Morelos" />
+  </div>
+  <div id="theme-button">
+    <button onclick='setTheme("Style1")'>Style 1</button>
+    <button onclick='setTheme("Style2")'>Style 2</button>
+  </div>
+  <footer>
+    <a class="footer-icon" id="github" href="https://github.com/mmorelos2" target="_blank">
+      <img src="Assets/github-icon.PNG" />
+      GitHub
+    </a>
+    <a class="footer-icon" id="email" href="mailto:morelos.marioluis@gmail.com">
+      <img src="Assets/email-icon.PNG" />
+      Email
+    </a>
+    <a class="footer-icon" id="linkedin" href="https://www.linkedin.com/in/MarioMorelos" target="_blank">
+      <img src="Assets/linkedin-icon.PNG" />
+      LinkedIn
+    </a>
+  </footer>
+</body>
 </html>

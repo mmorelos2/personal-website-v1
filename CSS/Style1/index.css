@@ -25,14 +25,14 @@ nav ul {
   height: 65px;
 }
 
-nav ul li {
+.navbar-item {
   display: block;
   flex: 1;
   padding: 0 1px 0 1px;
   white-space: nowrap;
 }
 
-li a {
+.navbar-item a {
   display: block;
   color: white;
   font-size: 20px;
@@ -45,7 +45,7 @@ li a {
   border-radius: 2px;
 }
 
-li a:hover {
+.navbar-item a:hover {
   background: rgb(75, 204, 213);
 }
 
@@ -55,11 +55,17 @@ nav {
   align-content: center;
 }
 
-#nav-current {
+.navbar-item a p {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-item-1 a {
   background: rgb(75, 204, 213);
 }
 
 #content {
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -75,4 +81,43 @@ nav {
 #content-paragraph {
   font-size: 3vh;
   font-style: italic;
+}
+
+#deco1 {
+  position: absolute;
+  top: 15vh;
+  left: 15vw;
+  border-top: 8px solid rgb(255, 49, 49);
+  border-left: 6px solid rgb(255, 49, 49);
+  display: block;
+  height: 100px;
+  width: 200px;
+}
+
+#deco2 {
+  position: absolute;
+  bottom: 15vh;
+  right: 15vw;
+  border-bottom: 8px solid rgb(15, 255, 80);
+  border-right: 6px solid rgb(15, 255, 80);
+  display: block;
+  height: 100px;
+  width: 200px;
+}
+
+#theme-button {
+  position: fixed;
+  bottom: 3px;
+  left: 3px;
+}
+
+#theme-button button {
+  border-color: rgb(24, 102, 209);
+  transition-duration: 0.4s;
+  padding: 5px;
+}
+
+#theme-button button:hover {
+  background: rgb(24, 102, 209);
+  color: white;
 }

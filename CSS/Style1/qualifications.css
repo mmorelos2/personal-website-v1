@@ -133,8 +133,9 @@ nav {
   margin-bottom: 10px;
 }
 
-#content-resume img {
-  height: 60vh;
+#content-resume iframe {
+  height: 63vh;
+  width: 48vh;
 }
 
 #navbar-item-4 a {
